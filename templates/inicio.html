@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es" ng-app="pokemon">
+<meta charset="utf-8">
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<title>Pokemon</title>
+	<!--CSS BOOTSTRAP-->
+	<link rel="stylesheet" href="../lib/bootstrap/css/bootstrap.css">
+	<link rel="stylesheet" href="../css/sesion.css">
+	<link rel="icon" href="https://davidquevedo.neocities.org/imagenes/PokeLogo2.png">
+</head>
+<body>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-md-12 spd">
+				<h1>POKEDEX</h1>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6 cc">ROLMAN ALEXANDER REQUENA PELICÓ</div>
+			<div class="col-md-2 cc"><a class="ww" href="../index.html">INICIO</a></div>
+			<div class="col-md-4 cc"><a class="ww" href="inicio.html">INGRESAR O REGISTRATE</a></div>
+		</div>
+		<div class="row"><br></div>s
+		<div class="row">
+			<div class="col-md-12">
+				<div class="boxMain">
+		<div class="containerBox">
+			<!--BOX LOGIN-->
+			<div class="boxLeft" id="boxLeft">
+				<form action="#" method="post" accept-charset="utf-8">
+					<h1 class="titleMain">INICIO DE SESIÓN</h1>
+					<input type="email" name="email" placeholder="Correo" required="">
+					<input type="password" name="password" placeholder="Contraseña" required="">
+					<input type="submit" value="INGRESAR" class="buttonSentTwo">
+				</form>
+			</div>
+			<!--BOX CREAR CUENTA-->
+			<div class="boxLeftAlt" id="boxLeftAlt">
+				<form action="#" method="post" accept-charset="utf-8">
+					<h1 class="titleMain aa">CREA TU CUENTA</h1>
+					<input type="text" name="name" placeholder="Nombre" required="">
+					<input type="text" name="lastName" placeholder="Apellido" required="">
+					<input type="email" name="email" placeholder="Correo" required="">
+					<input type="password" name="password" placeholder="Contraseña" required="">
+					<input type="text" name="phone" placeholder="Celular" required="">
+					<input type="submit" value="REGISTRATE" class="buttonSent" required="">
+				</form>
+			</div>
+
+			<!--BOX OPTIONS-->
+			<div class="boxRight">
+				<h2 class="titleSecond">Bienvenidos</h2>
+				<button onclick="mostrar('login')">Iniciar sesion</button>
+				<button onclick="mostrar('newCount')">Crear cuenta</button>
+			</div>
+		</div>
+	</div>
+			</div>
+		</div>
+	</div>
+	<!--ENLACE BOOTSTRAP-->
+	<script src ="lib/bootstrap/js/bootstrap.js"></script>
+	<!--enlaces angular-->
+	<script src="../lib/angular/angular.js"></script>
+	<script src="../js/sesion.js"></script>
+</body>
+</html>
