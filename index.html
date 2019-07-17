@@ -1,28 +1,54 @@
 <!DOCTYPE html>
-<html lang="es" ng-app="clima">
-<head>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-	<title>CLIMA</title>
-	<!--CSS BOOTSTRAP-->
-	<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.css">
-	<link rel="stylesheet" href="css/style.css">
-	<link rel="icon" href="">
-</head>
-<body ng-controller="clim">
-	<div class="container-fluid">
-		<div class="row">
-			<div class="col-md-3" ng-repeat="cl in climaB">
-				<div class="cuadro cdr">
-					<img class="im" src="{{cl.data.sprites.front_default}}">
-					<p class="cuadro">{{cl.data.name}}</p>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!--ENLACE BOOTSTRAP-->
-	<script src ="lib/bootstrap/js/bootstrap.js"></script>
-	<!--enlaces angular-->
-	<script src="lib/angular/angular.js"></script>
-	<script src="js/script.js"></script>
-</body>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <title>CLIMA API</title>
+      <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+      <script src="lib/jQuery/jquery.js"></script>
+      <script src="lib/bootstrap/bootstrap.css"></script>
+      <link rel="stylesheet" href="css/style.css">
+      <link rel="icon" href="img/i1.png">
+   </head>
+   <body>
+      <div class="container-fluid"> 
+         <div class="row"> 
+            <div class="col-md-6"> 
+               <div class="container wow animated zoomIn">
+                  <main><br><br>
+                     <div id="div-ciudades" >      
+                        <label class="tx">Ciudad</label>
+                        <input type="text" placeholder="Ingrese una ciudad" name="city" id="input-city" required>
+                        <i class="fas fa-search" id="add-btn" ></i>      
+                     </div>
+                     <!--Resultados-->
+                     <div id="resultados">
+                        <h2 class="tx">CLIMA EN: <span id="resul-city"></span></h2>
+                        <div class="datos">
+                           <p>Temperatura: <span id="temp"></span></p>
+                           <p>Temperatura Máxima: <span id="temp-max"></span></p>
+                           <p>Temperatura Minima: <span id="temp-min"></span></p>
+                           <p>Presión: <span id="pres"></span></p>
+                           <p>Humedad: <span id="hum"></span></p>
+                        </div>
+                     <p>¿Aquí puedes cambiar la escala en la que se te muestra la temperatura?</p>
+                     <div class="botones-temp">
+                        <button class="ttx" id="cel" >°C</button>
+                        <button class="ttx" id="faren" >°F</button>
+                        <button class="ttx" id="kel" class="btn">°K</button> 
+                  </main>
+               </div>
+            </div>
+            <div class="col-md-6"> 
+               <br><br>  
+                  <center>
+                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d123536.65268305682!2d-90.56260132154792!3d14.626375695645446!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a180655c3345%3A0x4a72c7815b867b25!2sGuatemala!5e0!3m2!1ses!2sgt!4v1562335735231!5m2!1ses!2sgt" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                  </center>
+            </div>
+         </div>
+      </div>
+      <script src="lib/angular/angular.js"></script>
+      <script src="lib/bootstrap/bootstrap.js"></script>
+      <script src="js/script.js"></script>
+   </body>
 </html>

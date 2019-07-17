@@ -1,3 +1,87 @@
-body {
-	background: #23eae6;
+body{
+background: #eaeaea;
+height: 100%;
+font-family: 'Montserrat', sans-serif;
+
+}
+.container{
+display: flex;
+justify-content: center;
+flex-direction: column;
+align-content: center;
+align-items: center;
+}
+
+ul li {
+	list-style: none;
+}
+
+h1{
+	margin:2px;
+	padding: 20px;
+}
+
+
+#div-ciudades{
+	font-size: 20px;
+	text-align: center;
+	background-color: #08d9d6;
+	padding: 10px;
+	border-radius: 10px;
+
+}
+
+
+#input-city{
+margin-bottom: 5px;
+
+}
+
+#resultados{
+	font-size: 15px;
+	width: 30em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	text-align: center;
+	background-color: #08d9d6;
+	margin-top: 20px;
+	padding-bottom: 20px;
+	border-radius: 10px;
+}
+
+
+.botones-temp{
+	display: flex;
+	justify-direction: column;
+	justify-content: center;
+}
+.botones-temp button{
+width: 80px;
+margin: 0 10px 0 10px;
+background-color: #ff2e63;
+outline:none;
+border:0;
+border-radius: 10px;
+
+}
+
+.botones-temp button:hover{
+	background-color: #ff2e63;
+
+}
+
+input{
+	background-color: #eaeaea;
+}
+
+#add-btn{
+	cursor: pointer;
+}
+.tx {
+	color:#252a34;
+	font-family: elephant;
+}
+.ttx {
+	color: #ffffff;
 }
